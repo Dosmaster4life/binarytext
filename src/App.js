@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   const [data, setData] = React.useState(null);
-    const [page, setPage] = React.useState(0);
+    const [page, setPage] = React.useState(2);
     const [text, setText] = React.useState("");
   React.useEffect(() => {
       if(page == 0) {
@@ -35,10 +35,18 @@ function App() {
                 return txttoBinary()
             case 1:
                 return binaryToText()
+            default:
+                return homePage()
 
         }
     }
-
+    function homePage() {
+        return <>
+            <h1>
+                Click a  button to get started!
+            </h1>
+        </>
+    }
     function binaryToText() { // convert binary to text through backend when textbox changes value
         return <>
             <label>
