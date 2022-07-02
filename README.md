@@ -12,9 +12,8 @@ binaryweb is a webapp that converts text to binary, and can also convert binary 
 The purpose of this software is to quickly allow users to convert text to binary or binary to text. This software is super
 simple and easy to use.
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running (starting the server and navigating through the web pages) and a walkthrough of the code.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=tIG9LDYDZlw)
 
 # Web Pages
 
