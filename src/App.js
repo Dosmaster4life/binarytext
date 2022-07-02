@@ -12,13 +12,13 @@ function App() {
     const [text, setText] = React.useState("");
   React.useEffect(() => {
       if(page == 0) {
-          console.log("page0")
+
           fetch("/api/text="+ text
           )
               .then((res) => res.json())
               .then((data) => setData(data.message));
       }else if (page == 1) {
-          console.log("page1")
+
           fetch("/api2/binary="+ text
           )
               .then((res) => res.json())
@@ -43,14 +43,14 @@ function App() {
     function homePage() {
         return <>
             <h1>
-                Click a  button to get started!
+                Click a button to get started!
             </h1>
         </>
     }
     function binaryToText() { // convert binary to text through backend when textbox changes value
         return <>
             <label>
-                Enter binary to get text output
+                Enter binary to get text output!
             </label>
             <input onChange={e => setText(e.target.value)}/>
             <h1>{data}</h1>
@@ -59,7 +59,7 @@ function App() {
     function txttoBinary() { // convert text to binary through backend when textbox changes value
         return <>
             <label>
-                Enter a string to get the binary output
+                Enter text to get binary output!
             </label>
             <input onChange={e => setText(e.target.value)}/>
             <h1>{data}</h1>
